@@ -45,7 +45,7 @@
     "MGSEQ",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1750696192544,
+  "columnUpdatedAt": 1750698662243,
   "columnWidthMap": {
     "MDAYS": 101,
     "PID": 87
@@ -227,7 +227,7 @@
       "isEditable": false,
       "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "Save / Discard",
       "notation": "standard",
       "onSave": "{{Update_milestones1.run(() => {\n            showAlert(\"Successfully saved!\");\n            Select_milestones1.run()\n          }, () => {\n            showAlert(\"Unable to save!\");\n          })}}",
@@ -539,7 +539,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{Select_milestones1.data}}",
   "textSize": "0.875rem",
-  "topRow": 0,
+  "topRow": 4,
   "totalRecordsCount": "{{Total_record_milestones1.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
