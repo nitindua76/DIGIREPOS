@@ -1,17 +1,12 @@
 {
   "animateLoading": true,
+  "borderColor": "#d4d4d8",
   "borderOpacity": 100,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": 1,
+  "borderRadius": "0.375rem",
+  "borderWidth": "1",
   "bottomRow": 65,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "none",
   "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
-    },
     {
       "key": "srcDoc"
     }
@@ -37,6 +32,7 @@
   "rightColumn": 64,
   "source": "https://www.example.com",
   "srcDoc": "<script type=\"module\">\n  import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.4.0/mermaid.esm.min.mjs';\n  mermaid.initialize({startOnLoad: true});\n</script>\n<div class=\"mermaid\">\n  {{PREPARE_CHARTDATA.myFun1()}}\n</div>\n",
+  "title": "Project Milestones",
   "topRow": 31,
   "type": "IFRAME_WIDGET",
   "version": 1,
