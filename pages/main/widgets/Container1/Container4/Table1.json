@@ -5,7 +5,7 @@
   "borderColor": "#71717a",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "2",
-  "bottomRow": 65,
+  "bottomRow": 30,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -46,7 +46,7 @@
     "MSTATUS",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1750704811262,
+  "columnUpdatedAt": 1750706300659,
   "columnWidthMap": {
     "MDAYS": 101,
     "PID": 87
@@ -189,7 +189,7 @@
   "isVisible": true,
   "isVisibleDownload": false,
   "isVisibleFilters": false,
-  "isVisiblePagination": false,
+  "isVisiblePagination": true,
   "isVisibleSearch": false,
   "key": "njjgvkgfjm",
   "label": "Data",

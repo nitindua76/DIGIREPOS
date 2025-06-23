@@ -51,13 +51,14 @@
     "PNEXT_MILESTONE",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1750696192547,
+  "columnUpdatedAt": 1750706300654,
   "columnWidthMap": {
     "PID": 65.99999999999999
   },
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
+  "defaultSearchText": "",
   "defaultSelectedRowIndex": "0",
   "defaultSelectedRowIndices": [
     0

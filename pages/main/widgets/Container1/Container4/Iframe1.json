@@ -34,7 +34,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 42,
+  "rightColumn": 64,
   "source": "https://www.example.com",
   "srcDoc": "<script type=\"module\">\n  import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.4.0/mermaid.esm.min.mjs';\n  mermaid.initialize({startOnLoad: true});\n</script>\n<div class=\"mermaid\">\n  {{PREPARE_CHARTDATA.myFun1()}}\n</div>\n",
   "topRow": 31,

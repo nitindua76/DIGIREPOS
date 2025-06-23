@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "Insert_projects1",
     "pageId": "main",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
