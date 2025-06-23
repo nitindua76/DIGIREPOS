@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  milestones
+WHERE
+  PID = {{Table2.selectedRow.PID}}
+ORDER BY
+	MGSEQ, MSEQ
+LIMIT
+  {{Table1.pageSize}}
+OFFSET
+  {{Table1.pageOffset}}

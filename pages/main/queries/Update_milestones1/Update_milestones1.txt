@@ -1,0 +1,1 @@
+UPDATE milestones SET PID= '{{Table1.updatedRow.PID}}', MSEQ= '{{Table1.updatedRow.MSEQ}}', MTYPE= '{{Table1.updatedRow.MTYPE}}', MDESC= '{{Table1.updatedRow.MDESC}}', MDAYS= '{{Table1.updatedRow.MDAYS}}', MCREATED_ON= '{{Table1.updatedRow.MCREATED_ON}}', MGSEQ= '{{Table1.updatedRow.MGSEQ}}' WHERE MID= '{{Table1.updatedRow.MID}}';

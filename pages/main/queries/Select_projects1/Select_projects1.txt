@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  projects
+WHERE
+  PNAME LIKE '%{{Table2.searchText}}%'
+ORDER BY
+  {{Table2.sortOrder.column || 'PID'}} {{Table2.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{Table2.pageSize}}
+OFFSET
+  {{Table2.pageOffset}}
