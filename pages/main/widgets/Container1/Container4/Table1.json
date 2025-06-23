@@ -286,7 +286,7 @@
     },
     "MDAYS": {
       "alias": "MDAYS",
-      "allowCellWrapping": false,
+      "allowCellWrapping": true,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
       "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MDAYS\"]))}}",
@@ -294,6 +294,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "BOLD",
       "horizontalAlignment": "LEFT",
       "id": "MDAYS",
       "index": 5,
@@ -311,13 +312,16 @@
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
-      "validation": {},
+      "validation": {
+        "max": "120",
+        "min": "0"
+      },
       "verticalAlignment": "CENTER",
       "width": 150
     },
     "MDESC": {
       "alias": "MDESC",
-      "allowCellWrapping": false,
+      "allowCellWrapping": true,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",

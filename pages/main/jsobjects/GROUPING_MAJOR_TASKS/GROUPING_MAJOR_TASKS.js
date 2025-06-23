@@ -1,6 +1,6 @@
 export default {
 generateMermaidGanttWithSections: (tasks)=> {
-  let syntax = 'gantt\ntitle Project Timeline\ndateFormat YYYY-MM-DD\n\n';
+  let syntax = 'gantt\ntitle Project Timelines\ndateFormat YYYY-MM-DD\n\n';
 
   // Group tasks by MAJOR
   let sections = [];
