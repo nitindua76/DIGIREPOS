@@ -2,11 +2,11 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "allowAddNewRow": false,
   "animateLoading": true,
-  "borderColor": "#ffffff",
+  "borderColor": "#e0dede",
   "borderRadius": "0.375rem",
-  "borderWidth": "2",
-  "bottomRow": 30,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "borderWidth": "1",
+  "bottomRow": 65,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "cachedTableData": {},
   "canFreezeColumn": true,
   "cellBackground": "{{}}",
@@ -62,9 +62,6 @@
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
-    },
-    {
-      "key": "boxShadow"
     },
     {
       "key": "totalRecordsCount"
@@ -202,8 +199,8 @@
   "onPageSizeChange": "{{Select_milestones1.run()}}",
   "onSearchTextChanged": "{{\n            Select_milestones1.run();\n            Total_record_milestones1.run()\n          }}",
   "onSort": "{{\n            Select_milestones1.run();\n            Total_record_milestones1.run()\n          }}",
-  "originalBottomRow": 62,
-  "originalTopRow": 4,
+  "originalBottomRow": 64,
+  "originalTopRow": 31,
   "parentColumnSpace": 15.2392578125,
   "parentId": "ap2ato20n0",
   "parentRowSpace": 10,
@@ -587,7 +584,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{Select_milestones1.data}}",
   "textSize": "0.875rem",
-  "topRow": 4,
+  "topRow": 31,
   "totalRecordsCount": "{{Total_record_milestones1.data[0].count}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
