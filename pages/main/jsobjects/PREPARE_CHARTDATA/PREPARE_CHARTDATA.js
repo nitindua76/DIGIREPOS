@@ -21,7 +21,19 @@ export default {
 						//return scheduledTasks;
 						// 3. Generate Mermaid syntax
 						//const mermaidSyntax = CHARTDATA.mapToMermaidGantt(scheduledTasks);
-						const mermaidSyntax = GROUPING_MAJOR_TASKS.generateMermaidGanttWithSections(scheduledTasks);
+						const mermaidSyntax = GROUPING_MAJOR_TASKS.generateMermaidGanttWithSections(scheduledTasks, {
+								title: "Project Milestone Timelines",
+								projectDeadline: "2025-07-15"
+							});
+						//return mermaidSyntax;
+		
+						//const tasks = TRANSFORM_TASKS_FRAPPE.transformToFrappeTasks(scheduledTasks);
+
+						//const gantt = new Gantt("#gantt", tasks, {
+						//	view_mode: 'Day', // or 'Week', 'Month'
+						//	custom_popup_html: null // You can add custom HTML for tooltips
+						//});
+		
 						return mermaidSyntax;
 	},
 	async myFun2 () {
