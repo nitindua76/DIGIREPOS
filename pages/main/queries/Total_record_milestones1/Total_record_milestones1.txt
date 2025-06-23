@@ -1,1 +1,1 @@
-SELECT COUNT(*) from milestones WHERE MDESC LIKE '%{{Table1.searchText}}%';
+SELECT COUNT(*) from milestones WHERE PID = {{Table2.selectedRow.PID}};

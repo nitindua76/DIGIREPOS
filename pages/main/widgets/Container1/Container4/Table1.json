@@ -5,7 +5,7 @@
   "borderColor": "#71717a",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "2",
-  "bottomRow": 62,
+  "bottomRow": 65,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -43,9 +43,10 @@
     "customColumn1",
     "MCREATED_ON",
     "MGSEQ",
+    "MSTATUS",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1750698662243,
+  "columnUpdatedAt": 1750704811262,
   "columnWidthMap": {
     "MDAYS": 101,
     "PID": 87
@@ -67,9 +68,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "tableData"
     },
     {
       "key": "totalRecordsCount"
@@ -124,6 +122,15 @@
     },
     {
       "key": "primaryColumns.customColumn1.computedValue"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.MSTATUS.computedValue"
+    },
+    {
+      "key": "primaryColumns.MSTATUS.cellBackground"
     }
   ],
   "dynamicPropertyPathList": [
@@ -167,6 +174,9 @@
     },
     {
       "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "onPageSizeChange"
     }
   ],
   "enableClientSideSearch": true,
@@ -175,15 +185,15 @@
   "horizontalAlignment": "LEFT",
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
-  "isSortable": true,
+  "isSortable": false,
   "isVisible": true,
   "isVisibleDownload": false,
   "isVisibleFilters": false,
-  "isVisiblePagination": true,
+  "isVisiblePagination": false,
   "isVisibleSearch": false,
   "key": "njjgvkgfjm",
   "label": "Data",
-  "leftColumn": 44,
+  "leftColumn": 42,
   "minWidth": 450,
   "mobileBottomRow": 34,
   "mobileLeftColumn": 0,
@@ -192,8 +202,11 @@
   "needsErrorInfo": false,
   "onAddNewRowSave": "{{Insert_milestones1.run(() => {\n            showAlert(\"Successfully created!\");\n            Select_milestones1.run()\n          }, () => {\n            showAlert(\"Unable to create!\");\n          })}}",
   "onPageChange": "{{\n            Select_milestones1.run();\n            Total_record_milestones1.run()\n          }}",
+  "onPageSizeChange": "{{Select_milestones1.run()}}",
   "onSearchTextChanged": "{{\n            Select_milestones1.run();\n            Total_record_milestones1.run()\n          }}",
   "onSort": "{{\n            Select_milestones1.run();\n            Total_record_milestones1.run()\n          }}",
+  "originalBottomRow": 62,
+  "originalTopRow": 4,
   "parentColumnSpace": 15.2392578125,
   "parentId": "ap2ato20n0",
   "parentRowSpace": 10,
@@ -432,6 +445,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "MSTATUS": {
+      "alias": "MSTATUS",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{}}",
+      "columnType": "text",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"MSTATUS\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "MSTATUS",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "MSTATUS",
+      "notation": "standard",
+      "originalId": "MSTATUS",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "MTYPE": {
       "alias": "MTYPE",
       "allowCellWrapping": false,
@@ -535,7 +582,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "serverSidePaginationEnabled": true,
+  "serverSidePaginationEnabled": false,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{Select_milestones1.data}}",
   "textSize": "0.875rem",

@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": 1,
+  "bottomRow": 65,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "srcDoc"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ifw6ia02nr",
+  "leftColumn": 0,
+  "mobileBottomRow": 54,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "originalBottomRow": 95,
+  "originalTopRow": 63,
+  "parentColumnSpace": 3.10888671875,
+  "parentId": "ap2ato20n0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 42,
+  "source": "https://www.example.com",
+  "srcDoc": "<script type=\"module\">\n  import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.4.0/mermaid.esm.min.mjs';\n  mermaid.initialize({startOnLoad: true});\n</script>\n<div class=\"mermaid\">\n  {{PREPARE_CHARTDATA.myFun1()}}\n</div>\n",
+  "topRow": 31,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "c982yjj4z8",
+  "widgetName": "Iframe1"
+}
